@@ -36,4 +36,6 @@ int main() {
 
     // I hate C C++ is far superior. In C++ we trust
     // never coding C again
+    
+    // I will make a compiler soon for c++ so you can be happy again
 }

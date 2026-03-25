@@ -17,6 +17,7 @@ done:
 %endmacro ; What does this mean
 
 [ORG 0x7c00] ; Read about ORG when you wake up I think its important
+              ; hopefully it isn't 'HelloWorld.asm:19: error: unrecognized directive [ORG]'
    xor ax, ax
    mov ds, ax
    cld

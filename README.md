@@ -18,4 +18,12 @@ This will teach you how to manualy compile the source code into a bootable image
 5. If you want to verify multiboot (use grub) which is recomended: exucute ```grub-file --is-x86-multiboot myos```
 
 > [!NOTE]  
-> The term ```myos``` or ```myos.iso``` refers to ArtemisOS, or the operating you are compiling. This will be changed later to ```atmsos ``` or  ```atmsos.iso``` later in development.
+> The term ```myos``` or ```myos.iso``` refers to ArtemisOS, or the operating you are compiling. This will be changed later to ```atmsos``` or  ```atmsos.iso``` later in development.
+
+## Running ArtemisOS
+(TBA)
+### Qemu
+Currently the best way to run ArtemisOS is in QEMU. To run it in QEMU you will want to run it with ```i386``` (TBA)
+Run ```qemu-system-i386 -cdrom myos.iso``` This should start a new virtual machine containing only your ISO as a cdrom. If all goes well, you will be met with a menu provided by the bootloader. Then you can continue onto the OS!
+
+Additionally, QEMU supports booting multiboot kernels directly without bootable medium: ```qemu-system-i386 -kernel myos``` which from my knowledge works best with MacOS.

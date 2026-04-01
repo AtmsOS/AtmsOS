@@ -111,16 +111,13 @@ void kernel_main(void)
 	terminal_initialize();
 
 	/* Newline support is left as an exercise. */
+	terminal_color = 11;
+	terminal_writestring("Artemis");
+	terminal_color = 9;
+	terminal_writestring("Os");
+
+	terminal_color = 15;
+	terminal_column = 1;
+	terminal_row = 3;
 	terminal_writestring("Hello, kernel World!\n");
-
-	terminal_row = 1;
-	terminal_column = 0;
-
-	terminal_color = 4;
-	terminal_writestring("This is Red text");
-
-	terminal_row = 2;
-	terminal_column = 0;
-
-	terminal_writestring("This is another row");
 }

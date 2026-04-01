@@ -27,3 +27,6 @@ Currently the best way to run ArtemisOS is in QEMU. To run it in QEMU you will w
 Run ```qemu-system-i386 -cdrom myos.iso``` This should start a new virtual machine containing only your ISO as a cdrom. If all goes well, you will be met with a menu provided by the bootloader. Then you can continue onto the OS!
 
 Additionally, QEMU supports booting multiboot kernels directly without bootable medium: ```qemu-system-i386 -kernel myos``` which from my knowledge works best with MacOS.
+
+> [!WARNING]  
+> If QEMU states qemu: ```could not open kernel file 'myos': No such file or directory``` you may need to add ```.iso``` onto ```myos``` making ```myos.iso```
